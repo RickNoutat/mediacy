@@ -1,4 +1,4 @@
-import Hero from "./_sections/hero.jsx";
+import Hero from "./_sections/hero";
 
 const LandingPage = () => {
   return (

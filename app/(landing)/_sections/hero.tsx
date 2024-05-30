@@ -32,12 +32,52 @@ const HeroInfo = () => {
         <br />
         <span className="text-[#6841da]">Social Media</span>
       </h1>
+      <p className="text-xs font-light">
+        Measure social media performance, create great reports, and get and{" "}
+        <br />
+        recommend recommendations to increase reach, engagement and sales.
+      </p>
+      <div className="flex gap-6">
+        <Button variant={"secondary"} size={"lg"}>
+          Get started now
+        </Button>
+        <Button variant={"primary"} size={"lg"}>
+          Contact us
+        </Button>
+      </div>
     </div>
   );
 };
 
 const HeroDL = () => {
-  return <div></div>;
+  return (
+    <div className="flex flex-col space-y-4">
+      <div className="flex items-center space-x-2">
+        <Image src={"/star.svg"} alt="Star" width={20} height={20} />
+        <p className="text-xs text-[#979797] font-bold">
+          PAY ONE-TIME SMALL FEE, USE LIFETIME
+        </p>
+      </div>
+      <div className="flex gap-6">
+        <Link href="/" className="cursor-pointer">
+          <Image
+            src={"/appstore-badge.svg"}
+            alt="AppStore"
+            width={120}
+            height={50}
+          />
+        </Link>
+        <Link href="/" className="cursor-pointer">
+          <Image
+            src={"/googleplay-badge.svg"}
+            alt="GooglePlay"
+            width={120}
+            height={50}
+          />
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 const HeroRight = () => {
