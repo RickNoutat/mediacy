@@ -1,5 +1,5 @@
-import Image from "next/image";
-
-export default function Home() {
+const LandingPage = () => {
   return <div></div>;
-}
+};
+
+export default LandingPage;
