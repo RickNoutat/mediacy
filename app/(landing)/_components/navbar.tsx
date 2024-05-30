@@ -8,6 +8,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import { Logo } from "./logo";
+import { Button } from "@/components/ui/button";
 
 const navigation = [
   {
@@ -36,6 +38,25 @@ export const Navbar = () => {
             <Link href="/" className="flex items-center space-x-2">
               <Logo />
               <h2 className="text-2xl font-bold">Mediacy</h2>
+            </Link>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+        <NavigationMenuList className="flex justify-between items-center font-light space-x-14 text-xs">
+          {navigation.map((link) => (
+            <NavigationMenuItem
+              className="cursor-pointer hover:underline"
+              key={link.item}
+            >
+              {link.item}
+            </NavigationMenuItem>
+          ))}
+        </NavigationMenuList>
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <Link href="/">
+              <Button variant="primary" size="lg">
+                Login
+              </Button>
             </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
