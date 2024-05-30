@@ -1,4 +1,4 @@
-import { BackgroundImage } from "./_components/background-image.jsx";
+import { BackgroundImage } from "./_components/background-image";
 
 interface LandingLayoutProps {
   children: React.ReactNode;
